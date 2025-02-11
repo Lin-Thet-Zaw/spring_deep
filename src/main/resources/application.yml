@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  config.activate.on-profile: dev
+  application:
+    name: Spring Deep
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password:
+    url: jdbc:mysql://localhost:3306/spring_deep
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  welcome:
+    message: Welcome to daily Code Buffer!!
+---
+spring:
+  config.activate.on-profile: prod
+  application:
+    name: Spring Deep
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password:
+    url: jdbc:mysql://localhost:3306/spring_deep
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  welcome:
+    message: Welcome to daily Code Buffer!!
+---
+spring:
+  config.activate.on-profile: qa
+  application:
+    name: Spring Deep
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password:
+    url: jdbc:mysql://localhost:3306/spring_deep
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  welcome:
+    message: Welcome to daily Code Buffer!!
